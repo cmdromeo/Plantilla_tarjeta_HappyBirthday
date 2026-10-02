@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz Cumpleaños Madrina Susana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@300;400;600&display=swap">
+<style>
+/* Layout: una tarjeta de papel sobre fondo verde jardín; portada con flores y una carta debajo. Un solo tema a propósito. */
+:root{
+  --garden:#22362C;     /* fondo verde profundo */
+  --garden-2:#2E4A3C;
+  --paper:#FCF7EE;      /* papel */
+  --ink:#2C2A26;        /* texto */
+  --ink-soft:#5E574C;
+  --gold:#B8914A;       /* filetes */
+  --gold-text:#8A6A2E;
+  --rose:#D9776A;       /* flores */
+  --rose-deep:#A8473D;  /* acento de texto */
+  --leaf:#6F8F6A;
+  --font-script:"Parisienne","Great Vibes",cursive;
+  --font-display:"Cormorant Garamond",Georgia,serif;
+  --font-body:"Mulish","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--garden);color:var(--ink);font-family:var(--font-body);font-weight:300;font-size:17px;line-height:1.7;padding-inline:16px;padding-block:28px 40px;
+  background-image:radial-gradient(circle at 15% 0%,var(--garden-2),transparent 55%),radial-gradient(circle at 100% 100%,var(--garden-2),transparent 50%)}
+.card{max-width:540px;margin:0 auto;background:var(--paper);border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.35);position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;inset:10px;border:1px solid rgba(184,145,74,.45);border-radius:3px;pointer-events:none}
+.flowers{position:absolute;width:190px;height:190px;pointer-events:none}
+.flowers.tl{left:-34px;top:-34px}
+.flowers.br{right:-34px;bottom:-34px;transform:rotate(180deg)}
+.cover{padding:84px 32px 40px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;position:relative}
+.eyebrow{font-size:.76rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-text);font-weight:600}
+h1{margin:0;font-family:var(--font-script);font-weight:400;font-size:clamp(3.2rem,13vw,4.6rem);line-height:1.05;color:var(--rose-deep);text-wrap:balance}
+.name{font-family:var(--font-display);font-size:1.7rem;letter-spacing:.04em;color:var(--ink)}
+.name em{font-style:italic;color:var(--rose-deep)}
+.cake{width:78px;height:78px;margin:6px 0}
+.flame{transform-origin:50% 100%;animation:flicker 1.6s ease-in-out infinite}
+@keyframes flicker{50%{transform:scaleY(.82) scaleX(1.08)}}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:10px 24px;border-radius:999px;border:1px solid var(--rose-deep);background:var(--rose-deep);color:var(--paper);font-family:var(--font-body);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;margin-top:10px;transition:background .2s}
+.btn:hover{background:#8C3A31}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.divider{width:160px;height:20px;color:var(--gold);margin:0 auto;display:block}
+.letter{padding:34px 40px 70px;position:relative;display:flex;flex-direction:column;gap:16px}
+@media (max-width:420px){.letter{padding:30px 26px 64px}.cover{padding:76px 22px 34px}}
+.letter p{margin:0;max-width:62ch}
+.greeting{font-family:var(--font-display);font-size:1.55rem;font-weight:600;color:var(--ink)}
+.wish{font-family:var(--font-display);font-style:italic;font-size:1.3rem;line-height:1.5;color:var(--rose-deep);text-align:center;padding:10px 6px;border-top:1px solid rgba(184,145,74,.45);border-bottom:1px solid rgba(184,145,74,.45)}
+.sign{display:flex;flex-direction:column;align-items:flex-end;gap:2px;margin-top:6px}
+.sign span{font-size:.92rem;color:var(--ink-soft)}
+.sign strong{font-family:var(--font-script);font-weight:400;font-size:2.6rem;line-height:1.1;color:var(--rose-deep)}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:10}
+.credit{text-align:center;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(252,247,238,.6);margin-top:18px}
+@media (prefers-reduced-motion:reduce){.flame{animation:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bouquet" viewBox="0 0 190 190">
+    <g fill="none" stroke="#6F8F6A" stroke-width="2" stroke-linecap="round">
+      <path d="M40 40 C70 70 90 90 130 150"/><path d="M40 40 C80 50 110 60 160 70"/><path d="M40 40 C55 80 60 110 62 160"/>
+    </g>
+    <g fill="#8FAE88"><ellipse cx="100" cy="98" rx="14" ry="6" transform="rotate(40 100 98)"/><ellipse cx="120" cy="62" rx="14" ry="6" transform="rotate(10 120 62)"/><ellipse cx="58" cy="110" rx="14" ry="6" transform="rotate(80 58 110)"/><ellipse cx="85" cy="128" rx="12" ry="5" transform="rotate(-30 85 128)"/></g>
+    <g><circle cx="62" cy="62" r="30" fill="#D9776A"/><circle cx="62" cy="62" r="20" fill="#E8958A"/><circle cx="62" cy="62" r="10" fill="#C4614F"/><path d="M52 58c6-8 16-8 20 0" stroke="#B5503F" stroke-width="2" fill="none"/></g>
+    <g><circle cx="128" cy="40" r="18" fill="#F0B6A8"/><circle cx="128" cy="40" r="10" fill="#E8958A"/></g>
+    <g><circle cx="38" cy="128" r="16" fill="#F0B6A8"/><circle cx="38" cy="128" r="8" fill="#E8958A"/></g>
+    <g fill="#B8914A"><circle cx="100" cy="30" r="3"/><circle cx="150" cy="96" r="3"/><circle cx="96" cy="150" r="3"/><circle cx="24" cy="92" r="2.5"/></g>
+  </symbol>
+  <symbol id="orn" viewBox="0 0 160 20"><g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M2 10h56M102 10h56"/><path d="M80 2l6 8-6 8-6-8z"/><path d="M58 10c6-5 10-5 14 0M102 10c-6-5-10-5-14 0"/></g></symbol>
+</svg>
+
+<main class="card">
+  <svg class="flowers tl" aria-hidden="true"><use href="#bouquet"/></svg>
+  <svg class="flowers br" aria-hidden="true"><use href="#bouquet"/></svg>
+
+  <section class="cover">
+    <div class="eyebrow">Con todo mi cariño</div>
+    <svg class="cake" viewBox="0 0 78 78" aria-hidden="true">
+      <g class="flame"><path d="M39 6c4 6 5 9 0 14-5-5-4-8 0-14z" fill="#E7A93B"/></g>
+      <rect x="37" y="20" width="4" height="12" rx="1" fill="#B8914A"/>
+      <rect x="14" y="32" width="50" height="16" rx="3" fill="#F0B6A8"/>
+      <path d="M14 40c6 4 10 4 16 0s10-4 16 0 10 4 18 0" stroke="#FCF7EE" stroke-width="2.5" fill="none"/>
+      <rect x="8" y="48" width="62" height="20" rx="3" fill="#D9776A"/>
+      <path d="M8 56c7 5 12 5 20 0s13-5 20 0 13 5 22 0" stroke="#FCF7EE" stroke-width="2.5" fill="none"/>
+      <rect x="4" y="68" width="70" height="4" rx="2" fill="#B8914A"/>
+    </svg>
+    <h1>¡Feliz cumpleaños!</h1>
+    <div class="name">Querida madrina <em>Susana</em></div>
+    <button class="btn" type="button" id="celebrate">Celebrar contigo</button>
+  </section>
+
+  <svg class="divider" aria-hidden="true"><use href="#orn"/></svg>
+
+  <article class="letter">
+    <p class="greeting">Querida madrina Susana:</p>
+    <p>Hoy es un día muy especial y no quería dejar pasar la oportunidad de decirte lo mucho que significas para mí.</p>
+    <p>Desde siempre has sido mucho más que una madrina. Has sido guía, apoyo y ejemplo, y una presencia llena de cariño en cada etapa de mi vida. Gracias por tus consejos, por tu paciencia y por estar siempre pendiente de mí con ese amor tan tuyo. Muchas de las cosas buenas que he logrado llevan algo de lo que tú sembraste en mí.</p>
+    <p class="wish">Que Dios te llene de salud, paz y alegría, y que este nuevo año de vida te traiga muchos momentos felices junto a las personas que amas.</p>
+    <p>Que se cumplan todos los sueños que guardas en el corazón. Mereces todo lo bonito que la vida tiene para dar, porque tú das amor sin medida.</p>
+    <p>Disfruta mucho tu día y déjate consentir, que hoy te toca a ti. ¡Feliz cumpleaños, madrina querida! Te quiero muchísimo.</p>
+    <div class="sign"><span>Con todo mi cariño,</span><strong>Roxi</strong></div>
+  </article>
+</main>
+<div class="credit">Hecha con cariño por QORI Soluciones</div>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script>
+(function(){
+  const cv = document.getElementById("confetti"), ctx = cv.getContext("2d");
+  const colors = ["#D9776A","#F0B6A8","#B8914A","#E7C77A","#8FAE88","#FCF7EE"];
+  let parts = [], raf = null;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function size(){ cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio; ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0); }
+  addEventListener("resize", size); size();
+  function burst(n){
+    for (let i = 0; i < n; i++) parts.push({
+      x: innerWidth / 2 + (Math.random() - .5) * 120, y: innerHeight * .35,
+      vx: (Math.random() - .5) * 11, vy: -Math.random() * 11 - 4,
+      w: 6 + Math.random() * 6, h: 8 + Math.random() * 8,
+      r: Math.random() * 6.28, vr: (Math.random() - .5) * .3,
+      c: colors[(Math.random() * colors.length) | 0], life: 0
+    });
+    if (!raf) raf = requestAnimationFrame(step);
+  }
+  function step(){
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+    parts.forEach(p => { p.vy += .22; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life++;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.r); ctx.fillStyle = p.c; ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h * Math.abs(Math.cos(p.life * .1))); ctx.restore(); });
+    parts = parts.filter(p => p.y < innerHeight + 40);
+    raf = parts.length ? requestAnimationFrame(step) : null;
+    if (!raf) ctx.clearRect(0, 0, innerWidth, innerHeight);
+  }
+  document.getElementById("celebrate").addEventListener("click", () => { if (!reduce) burst(160); document.querySelector(".letter").scrollIntoView({behavior: reduce ? "auto" : "smooth"}); });
+  if (!reduce) setTimeout(() => burst(90), 500);
+})();
+</script>
+</body>
+</html>
